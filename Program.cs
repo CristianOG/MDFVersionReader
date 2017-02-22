@@ -12,8 +12,10 @@ namespace MDFVersion1
     {
         static void Main(string[] args)
         {
+            Console.Write("Enter path to .mdf file: ");
             string path = Console.ReadLine();
-            Console.WriteLine(GetDbiVersion(path).ToString());
+            Console.WriteLine(string.Empty);
+            Console.WriteLine(".mdf version: " + GetDbiVersion(path).ToString());
             Console.ReadKey();
         }
 
